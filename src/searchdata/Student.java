@@ -12,10 +12,7 @@ public class Student {
 
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		
-		System.out.println("narayan");
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		System.out.println("done");
-		System.out.println("done");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/Studentt", "root", "abc123");
 		Statement st = con.createStatement();
 		try {
